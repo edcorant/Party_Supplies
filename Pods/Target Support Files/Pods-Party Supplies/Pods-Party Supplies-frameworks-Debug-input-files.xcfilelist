@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Party Supplies/Pods-Party Supplies-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework
+${BUILT_PRODUCTS_DIR}/Parse/Parse.framework

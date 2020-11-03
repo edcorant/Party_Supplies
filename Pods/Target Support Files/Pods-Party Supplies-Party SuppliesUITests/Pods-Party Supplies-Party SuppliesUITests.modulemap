@@ -1,0 +1,6 @@
+framework module Pods_Party_Supplies_Party_SuppliesUITests {
+  umbrella header "Pods-Party Supplies-Party SuppliesUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
