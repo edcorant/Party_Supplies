@@ -31,11 +31,58 @@ class Sign_In_ViewController: UIViewController {
     */
 
     @IBAction func on_sign_in(_ sender: Any) {
-        // this comment added for testing purposes
+        
+        // get text values from textboxes
+        let username = username_text_field.text!
+        let password = password_text_field.text!
+        
+        // call this function to authenticate user in database
+        PFUser.logInWithUsername(inBackground: username, password: password) {
+          (user: PFUser?, error: Error?) -> Void in
+            
+            if user != nil {
+                self.clear_textboxes()
+                // if successful, go to feed view
+                self.performSegue(withIdentifier: "user_authenticated", sender: nil)
+                UserDefaults.standard.set(true, forKey: "userloggedin")
+            }
+            
+            else {
+                print("Error: \(error?.localizedDescription ?? "Sign In Failed").")
+            }
+        }
+        
     }
     
     @IBAction func on_sign_up(_ sender: Any) {
         
+        // create a new user object
+        let user = PFUser()
+        // get text values from textboxes
+        user.username = username_text_field.text
+        user.password = password_text_field.text
+        
+        // call this function from to write new user to database
+        user.signUpInBackground { (success, error) in
+            if success {
+                self.clear_textboxes()
+                // if successful, go to feed view
+                self.performSegue(withIdentifier: "user_authenticated", sender: nil)
+            }
+            
+            else {
+                print("Error: \(error?.localizedDescription ?? "Sign Up Failed").")
+            }
+        }
     }
     
+    func clear_textboxes () {
+        self.username_text_field.text = nil
+        self.password_text_field.text = nil
+    }
+    
+    // this will dismiss the keyboard when user taps elsewhere on the screen
+    @IBAction func dismiss_keyboard(_ sender: Any) {
+        view.endEditing(true)
+    }
 }
