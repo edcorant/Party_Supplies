@@ -39,14 +39,12 @@ class Sign_In_ViewController: UIViewController {
         // call this function to authenticate user in database
         PFUser.logInWithUsername(inBackground: username, password: password) {
           (user: PFUser?, error: Error?) -> Void in
-            
             if user != nil {
                 self.clear_textboxes()
                 // if successful, go to feed view
                 self.performSegue(withIdentifier: "user_authenticated", sender: nil)
                 UserDefaults.standard.set(true, forKey: "userloggedin")
             }
-            
             else {
                 print("Error: \(error?.localizedDescription ?? "Sign In Failed").")
             }
