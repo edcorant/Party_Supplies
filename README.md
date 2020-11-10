@@ -35,8 +35,8 @@ This app can start by first providing the ability to organize a party and assign
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
-* User can register a new account.
-* User can log in.
+* [x] User can register a new account.
+* [x] User can log in.
 * User can create a party and add members.
 * User can create a list of supplies needed for party.
 * Party attendees can choose an item from the list to bring to the party.
@@ -47,6 +47,14 @@ This app can start by first providing the ability to organize a party and assign
 * Allow users to exchange photos after the party.
 * Allow users to add a link to a spotify group session.
 * Let user know if nearest store has item in stock (like a Target?)
+
+### App in Action
+
+Here's a small walkthrough of implemented user stories:
+
+<img src='https://i.imgur.com/cgnj3fI.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+
 
 ### 2. Screen Archetypes
 
