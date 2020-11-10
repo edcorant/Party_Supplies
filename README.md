@@ -106,7 +106,7 @@ Here's a small walkthrough of implemented user stories:
     * Add Friends (tab item)
     * Upcoming (tab item)
 ## Wireframes
-<img src="https://ibb.co/bvjgxpX" width=600>
+<img src="https://i.postimg.cc/NjWGn30S/Screen-Shot-2020-11-10-at-5-43-33-PM.png" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
