@@ -3,13 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3B6EEC4BB2D3F31E7DC30009 /* Pods_Party_Supplies_Party_SuppliesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC9CEA7CE68D63F84FADC3C /* Pods_Party_Supplies_Party_SuppliesUITests.framework */; };
 		7099630841F11C320D4E045C /* Pods_Party_SuppliesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891FE08825AD6691932341B1 /* Pods_Party_SuppliesTests.framework */; };
 		B90486F2120DD63F46D6A578 /* Pods_Party_Supplies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955F6A16015C37D0CD0D0597 /* Pods_Party_Supplies.framework */; };
+		E952BF22255B56E3005508EE /* New_Party.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E952BF21255B56E3005508EE /* New_Party.storyboard */; };
+		E952BF2A255B5FCF005508EE /* New_Party_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E952BF29255B5FCF005508EE /* New_Party_ViewController.swift */; };
 		E9F52FC625520F320069243B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F52FC525520F320069243B /* AppDelegate.swift */; };
 		E9F52FC825520F320069243B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F52FC725520F320069243B /* SceneDelegate.swift */; };
 		E9F52FCA25520F320069243B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F52FC925520F320069243B /* ViewController.swift */; };
@@ -48,6 +50,8 @@
 		891FE08825AD6691932341B1 /* Pods_Party_SuppliesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Party_SuppliesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		955F6A16015C37D0CD0D0597 /* Pods_Party_Supplies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Party_Supplies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA72674CC66D7FC37BAEDB64 /* Pods-Party SuppliesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Party SuppliesTests.debug.xcconfig"; path = "Target Support Files/Pods-Party SuppliesTests/Pods-Party SuppliesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E952BF21255B56E3005508EE /* New_Party.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = New_Party.storyboard; path = Storyboards/New_Party.storyboard; sourceTree = "<group>"; };
+		E952BF29255B5FCF005508EE /* New_Party_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New_Party_ViewController.swift; sourceTree = "<group>"; };
 		E9F52FC225520F320069243B /* Party Supplies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Party Supplies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F52FC525520F320069243B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9F52FC725520F320069243B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,11 +148,13 @@
 				E9F52FC525520F320069243B /* AppDelegate.swift */,
 				E9F52FC725520F320069243B /* SceneDelegate.swift */,
 				E9F52FC925520F320069243B /* ViewController.swift */,
-				E9F52FCB25520F320069243B /* Main.storyboard */,
 				E9F53001255215990069243B /* Sign_In_ViewController.swift */,
+				E9F52FCB25520F320069243B /* Main.storyboard */,
+				E952BF21255B56E3005508EE /* New_Party.storyboard */,
 				E9F52FCE25520F330069243B /* Assets.xcassets */,
 				E9F52FD025520F330069243B /* LaunchScreen.storyboard */,
 				E9F52FD325520F330069243B /* Info.plist */,
+				E952BF29255B5FCF005508EE /* New_Party_ViewController.swift */,
 			);
 			path = "Party Supplies";
 			sourceTree = "<group>";
@@ -279,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E952BF22255B56E3005508EE /* New_Party.storyboard in Resources */,
 				E9F52FD225520F330069243B /* LaunchScreen.storyboard in Resources */,
 				E9F52FCF25520F330069243B /* Assets.xcassets in Resources */,
 				E9F52FCD25520F320069243B /* Main.storyboard in Resources */,
@@ -410,6 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9F53002255215990069243B /* Sign_In_ViewController.swift in Sources */,
+				E952BF2A255B5FCF005508EE /* New_Party_ViewController.swift in Sources */,
 				E9F52FCA25520F320069243B /* ViewController.swift in Sources */,
 				E9F52FC625520F320069243B /* AppDelegate.swift in Sources */,
 				E9F52FC825520F320069243B /* SceneDelegate.swift in Sources */,

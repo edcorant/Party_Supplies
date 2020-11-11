@@ -111,49 +111,77 @@
             </objects>
             <point key="canvasLocation" x="140.57971014492756" y="138.61607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="YoY-TM-Jv6">
             <objects>
                 <viewController id="zDs-k3-2HC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cO8-sK-tqg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="O60-Ce-xE3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="8FB-hW-n8n"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="O60-Ce-xE3" firstAttribute="trailing" secondItem="8FB-hW-n8n" secondAttribute="trailing" id="9tc-zF-gVO"/>
+                            <constraint firstItem="O60-Ce-xE3" firstAttribute="leading" secondItem="8FB-hW-n8n" secondAttribute="leading" id="DsW-lq-4tO"/>
+                            <constraint firstAttribute="bottom" secondItem="O60-Ce-xE3" secondAttribute="bottom" id="he8-PU-yGn"/>
+                            <constraint firstItem="O60-Ce-xE3" firstAttribute="top" secondItem="cO8-sK-tqg" secondAttribute="top" id="sIq-q9-n4l"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="OS9-EU-lUD"/>
+                    <navigationItem key="navigationItem" title="Title" id="aCl-Dn-egd">
+                        <barButtonItem key="rightBarButtonItem" title="+ New Party" id="zkF-74-95c">
+                            <connections>
+                                <segue destination="lBO-oK-dzr" kind="presentation" id="OnG-ki-xg6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="87c-es-ARa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2870" y="998"/>
+            <point key="canvasLocation" x="2869.5652173913045" y="997.76785714285711"/>
         </scene>
-        <!--Add Friends-->
+        <!--Your Profile-->
         <scene sceneID="UQ1-lr-iCb">
             <objects>
-                <viewController id="7fJ-TM-NUJ" userLabel="Add Friends" sceneMemberID="viewController">
+                <viewController id="7fJ-TM-NUJ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uDD-Lx-LCF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="cbj-zx-lUk"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Add Friends" id="59Y-IS-dF8" userLabel="Add Friends"/>
+                    <tabBarItem key="tabBarItem" title="Your Profile" id="59Y-IS-dF8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W9w-Rj-AoO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1035" y="998"/>
         </scene>
-        <!--Your Parties-->
+        <!--New_Party-->
+        <scene sceneID="hdk-gM-RQk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="New_Party" id="lBO-oK-dzr" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zdU-9P-Ura"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Phe-pc-unP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3455" y="860"/>
+        </scene>
+        <!--Add Friends-->
         <scene sceneID="Wst-mE-Zu4">
             <objects>
-                <viewController id="qqz-zL-dEo" userLabel="Your Parties" sceneMemberID="viewController">
+                <viewController id="qqz-zL-dEo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KU8-LY-O66">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="al7-qd-W3Z"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Your Parties" id="rmz-yU-YRb" userLabel="Your Parties"/>
+                    <tabBarItem key="tabBarItem" title="Add Friends" id="rmz-yU-YRb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m4O-So-8Jy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -171,20 +199,20 @@
                     </tabBar>
                     <connections>
                         <segue destination="qs3-WG-37E" kind="relationship" relationship="viewControllers" id="cxm-lY-Ov6"/>
-                        <segue destination="7fJ-TM-NUJ" kind="relationship" relationship="viewControllers" id="zVC-1H-n5p"/>
                         <segue destination="qqz-zL-dEo" kind="relationship" relationship="viewControllers" id="E09-UV-xf2"/>
                         <segue destination="GHk-GO-Sxs" kind="relationship" relationship="viewControllers" id="kto-kN-aOy"/>
+                        <segue destination="7fJ-TM-NUJ" kind="relationship" relationship="viewControllers" id="zVC-1H-n5p"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7vK-c3-6k1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1035" y="139"/>
         </scene>
-        <!--Your Profile-->
+        <!--Your Parties-->
         <scene sceneID="v6v-WG-6uw">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GHk-GO-Sxs" userLabel="Your Profile" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Your Profile" id="aBu-Uk-Qra" userLabel="Your Profile"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GHk-GO-Sxs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Your Parties" id="aBu-Uk-Qra"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fHl-R1-wgz">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
