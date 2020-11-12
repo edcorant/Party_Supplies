@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--New Party View Controller-->
         <scene sceneID="bgh-uZ-ux3">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="IOc-NT-s51" sceneMemberID="viewController">
+                <viewController id="IOc-NT-s51" customClass="New_Party_ViewController" customModule="Party_Supplies" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mhH-GF-bIa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,16 +59,21 @@
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Iec-9l-wxZ">
                                 <rect key="frame" x="47" y="515" width="320" height="216"/>
                             </datePicker>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rlq-KC-DB8">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rlq-KC-DB8">
+                                <rect key="frame" x="0.0" y="59" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wf8-hZ-y8o">
+                                <rect key="frame" x="0.0" y="32" width="414" height="44"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
-                                    <navigationItem title="Title" id="noi-aR-WGa">
-                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="V1B-zU-vB4">
+                                    <navigationItem title="Title" id="QHE-rk-bpF">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="e6O-9v-hZr">
                                             <connections>
-                                                <action selector="cancel_button:" destination="ckr-Zc-8Ey" id="Xwn-zF-jKo"/>
+                                                <action selector="cancel_button:" destination="IOc-NT-s51" id="OrE-FV-UnL"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Create!" id="PBX-IQ-DRo"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Create" id="22Q-Ku-ssh"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -79,6 +84,7 @@
                             <constraint firstItem="GB1-sK-fbg" firstAttribute="trailing" secondItem="Pei-rA-2Tt" secondAttribute="trailing" constant="30" id="2Oo-gn-Eco"/>
                             <constraint firstItem="Pei-rA-2Tt" firstAttribute="centerY" secondItem="mhH-GF-bIa" secondAttribute="centerY" id="3sr-5t-ont"/>
                             <constraint firstItem="DzT-Bt-Rv4" firstAttribute="centerX" secondItem="mhH-GF-bIa" secondAttribute="centerX" id="76P-Re-7TN"/>
+                            <constraint firstItem="wf8-hZ-y8o" firstAttribute="leading" secondItem="GB1-sK-fbg" secondAttribute="leading" id="7Ms-1Y-wyh"/>
                             <constraint firstItem="Iec-9l-wxZ" firstAttribute="top" secondItem="Pei-rA-2Tt" secondAttribute="bottom" constant="50" id="7mD-SC-tDy"/>
                             <constraint firstItem="hWZ-hn-7ao" firstAttribute="leading" secondItem="GB1-sK-fbg" secondAttribute="leading" constant="30" id="AJh-yF-Ywd"/>
                             <constraint firstItem="x3o-Ly-npf" firstAttribute="centerX" secondItem="mhH-GF-bIa" secondAttribute="centerX" id="Cfk-gi-kSK"/>
@@ -86,22 +92,24 @@
                             <constraint firstItem="F5Y-Xa-56u" firstAttribute="leading" secondItem="GB1-sK-fbg" secondAttribute="leading" constant="30" id="FQf-Xh-FcO"/>
                             <constraint firstItem="GB1-sK-fbg" firstAttribute="trailing" secondItem="DzT-Bt-Rv4" secondAttribute="trailing" constant="30" id="GaX-cL-r6e"/>
                             <constraint firstItem="IVe-CK-UVh" firstAttribute="leading" secondItem="GB1-sK-fbg" secondAttribute="leading" constant="30" id="MCh-rh-oF0"/>
-                            <constraint firstItem="Rlq-KC-DB8" firstAttribute="leading" secondItem="GB1-sK-fbg" secondAttribute="leading" id="Nzg-8F-f8x"/>
-                            <constraint firstItem="Rlq-KC-DB8" firstAttribute="top" secondItem="GB1-sK-fbg" secondAttribute="top" id="OCx-an-Fa1"/>
                             <constraint firstItem="Pei-rA-2Tt" firstAttribute="leading" secondItem="GB1-sK-fbg" secondAttribute="leading" constant="30" id="Ovd-Ps-ykQ"/>
-                            <constraint firstItem="Rlq-KC-DB8" firstAttribute="trailing" secondItem="GB1-sK-fbg" secondAttribute="trailing" id="YSo-aY-STX"/>
+                            <constraint firstItem="wf8-hZ-y8o" firstAttribute="trailing" secondItem="GB1-sK-fbg" secondAttribute="trailing" id="W3I-CY-cZ7"/>
                             <constraint firstItem="x3o-Ly-npf" firstAttribute="top" secondItem="GB1-sK-fbg" secondAttribute="top" constant="75" id="aSP-sc-HZ3"/>
                             <constraint firstItem="Iec-9l-wxZ" firstAttribute="top" secondItem="hWZ-hn-7ao" secondAttribute="bottom" constant="8" symbolic="YES" id="c3e-q9-yFO"/>
                             <constraint firstItem="Iec-9l-wxZ" firstAttribute="centerX" secondItem="mhH-GF-bIa" secondAttribute="centerX" id="e6f-fV-FAc"/>
                             <constraint firstItem="DzT-Bt-Rv4" firstAttribute="top" secondItem="F5Y-Xa-56u" secondAttribute="bottom" constant="8" symbolic="YES" id="fMy-aO-W4m"/>
                             <constraint firstItem="DzT-Bt-Rv4" firstAttribute="leading" secondItem="GB1-sK-fbg" secondAttribute="leading" constant="30" id="g1C-cb-EED"/>
                             <constraint firstItem="IVe-CK-UVh" firstAttribute="top" secondItem="DzT-Bt-Rv4" secondAttribute="bottom" constant="20" id="w5C-RW-gy0"/>
+                            <constraint firstItem="wf8-hZ-y8o" firstAttribute="top" secondItem="mhH-GF-bIa" secondAttribute="top" constant="32" id="wdY-P7-bcn"/>
                             <constraint firstItem="Pei-rA-2Tt" firstAttribute="top" secondItem="IVe-CK-UVh" secondAttribute="bottom" constant="8" symbolic="YES" id="zXQ-2A-NB3"/>
                         </constraints>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Cancel" id="aTg-JW-a0Z"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IKy-uV-fqT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="ckr-Zc-8Ey" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="200.00000000000003" y="157.36607142857142"/>
         </scene>

@@ -136,7 +136,7 @@
                     <navigationItem key="navigationItem" title="Title" id="aCl-Dn-egd">
                         <barButtonItem key="rightBarButtonItem" title="+ New Party" id="zkF-74-95c">
                             <connections>
-                                <segue destination="lBO-oK-dzr" kind="presentation" id="OnG-ki-xg6"/>
+                                <segue destination="lBO-oK-dzr" kind="presentation" modalPresentationStyle="fullScreen" id="OnG-ki-xg6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -169,7 +169,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Phe-pc-unP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3455" y="860"/>
+            <point key="canvasLocation" x="3649" y="1112"/>
         </scene>
         <!--Add Friends-->
         <scene sceneID="Wst-mE-Zu4">
@@ -190,7 +190,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="pa1-70-JrJ">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="wyy-XI-1BQ" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabbarController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="wyy-XI-1BQ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MHh-Lb-4M4">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
