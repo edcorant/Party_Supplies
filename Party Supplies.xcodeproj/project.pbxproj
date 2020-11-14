@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3B6EEC4BB2D3F31E7DC30009 /* Pods_Party_Supplies_Party_SuppliesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC9CEA7CE68D63F84FADC3C /* Pods_Party_Supplies_Party_SuppliesUITests.framework */; };
+		651CFA89255F37570006F5E6 /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651CFA88255F37570006F5E6 /* FriendsTableViewCell.swift */; };
+		651CFA99255F3AD40006F5E6 /* FriendsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651CFA98255F3AD40006F5E6 /* FriendsScreenViewController.swift */; };
+		652D7D32255F1DFC0086EF3C /* YourProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D7D31255F1DFC0086EF3C /* YourProfileViewController.swift */; };
+		653C1D5D256044B20005F2EA /* AddFriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C1D5C256044B20005F2EA /* AddFriendsTableViewCell.swift */; };
+		653C1D6B256045D40005F2EA /* AddFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C1D6A256045D40005F2EA /* AddFriendsViewController.swift */; };
+		653C1D702560532C0005F2EA /* FriendRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C1D6F2560532C0005F2EA /* FriendRequestsViewController.swift */; };
+		653C1D75256055390005F2EA /* FriendRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C1D74256055390005F2EA /* FriendRequestTableViewCell.swift */; };
 		7099630841F11C320D4E045C /* Pods_Party_SuppliesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891FE08825AD6691932341B1 /* Pods_Party_SuppliesTests.framework */; };
 		B90486F2120DD63F46D6A578 /* Pods_Party_Supplies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955F6A16015C37D0CD0D0597 /* Pods_Party_Supplies.framework */; };
 		E952BF22255B56E3005508EE /* New_Party.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E952BF21255B56E3005508EE /* New_Party.storyboard */; };
@@ -47,10 +54,17 @@
 		46C5DB3C2D145B9C95E8E61F /* Pods-Party Supplies-Party SuppliesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Party Supplies-Party SuppliesUITests.debug.xcconfig"; path = "Target Support Files/Pods-Party Supplies-Party SuppliesUITests/Pods-Party Supplies-Party SuppliesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		60430441FC48729BDBCE0610 /* Pods-Party Supplies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Party Supplies.debug.xcconfig"; path = "Target Support Files/Pods-Party Supplies/Pods-Party Supplies.debug.xcconfig"; sourceTree = "<group>"; };
 		60C89AE72E4213645A8D9C02 /* Pods-Party Supplies-Party SuppliesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Party Supplies-Party SuppliesUITests.release.xcconfig"; path = "Target Support Files/Pods-Party Supplies-Party SuppliesUITests/Pods-Party Supplies-Party SuppliesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		651CFA88255F37570006F5E6 /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
+		651CFA98255F3AD40006F5E6 /* FriendsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsScreenViewController.swift; sourceTree = "<group>"; };
+		652D7D31255F1DFC0086EF3C /* YourProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourProfileViewController.swift; sourceTree = "<group>"; };
+		653C1D5C256044B20005F2EA /* AddFriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendsTableViewCell.swift; sourceTree = "<group>"; };
+		653C1D6A256045D40005F2EA /* AddFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendsViewController.swift; sourceTree = "<group>"; };
+		653C1D6F2560532C0005F2EA /* FriendRequestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestsViewController.swift; sourceTree = "<group>"; };
+		653C1D74256055390005F2EA /* FriendRequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestTableViewCell.swift; sourceTree = "<group>"; };
 		891FE08825AD6691932341B1 /* Pods_Party_SuppliesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Party_SuppliesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		955F6A16015C37D0CD0D0597 /* Pods_Party_Supplies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Party_Supplies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA72674CC66D7FC37BAEDB64 /* Pods-Party SuppliesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Party SuppliesTests.debug.xcconfig"; path = "Target Support Files/Pods-Party SuppliesTests/Pods-Party SuppliesTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E952BF21255B56E3005508EE /* New_Party.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = New_Party.storyboard; path = Storyboards/New_Party.storyboard; sourceTree = "<group>"; };
+		E952BF21255B56E3005508EE /* New_Party.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = New_Party.storyboard; sourceTree = "<group>"; };
 		E952BF29255B5FCF005508EE /* New_Party_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New_Party_ViewController.swift; sourceTree = "<group>"; };
 		E9F52FC225520F320069243B /* Party Supplies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Party Supplies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F52FC525520F320069243B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +111,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		653C1D502560428A0005F2EA /* Friends Cells */ = {
+			isa = PBXGroup;
+			children = (
+				651CFA88255F37570006F5E6 /* FriendsTableViewCell.swift */,
+				653C1D5C256044B20005F2EA /* AddFriendsTableViewCell.swift */,
+				653C1D74256055390005F2EA /* FriendRequestTableViewCell.swift */,
+			);
+			name = "Friends Cells";
+			sourceTree = "<group>";
+		};
 		7069CC782C01CCEA45FAE67A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,14 +169,19 @@
 		E9F52FC425520F320069243B /* Party Supplies */ = {
 			isa = PBXGroup;
 			children = (
+				653C1D502560428A0005F2EA /* Friends Cells */,
+				E9F52FCB25520F320069243B /* Main.storyboard */,
+				653C1D6F2560532C0005F2EA /* FriendRequestsViewController.swift */,
+				653C1D6A256045D40005F2EA /* AddFriendsViewController.swift */,
+				651CFA98255F3AD40006F5E6 /* FriendsScreenViewController.swift */,
+				652D7D31255F1DFC0086EF3C /* YourProfileViewController.swift */,
+				E952BF21255B56E3005508EE /* New_Party.storyboard */,
+				E9F52FD025520F330069243B /* LaunchScreen.storyboard */,
 				E9F52FC525520F320069243B /* AppDelegate.swift */,
 				E9F52FC725520F320069243B /* SceneDelegate.swift */,
 				E9F52FC925520F320069243B /* ViewController.swift */,
 				E9F53001255215990069243B /* Sign_In_ViewController.swift */,
-				E9F52FCB25520F320069243B /* Main.storyboard */,
-				E952BF21255B56E3005508EE /* New_Party.storyboard */,
 				E9F52FCE25520F330069243B /* Assets.xcassets */,
-				E9F52FD025520F330069243B /* LaunchScreen.storyboard */,
 				E9F52FD325520F330069243B /* Info.plist */,
 				E952BF29255B5FCF005508EE /* New_Party_ViewController.swift */,
 			);
@@ -418,9 +447,16 @@
 			files = (
 				E9F53002255215990069243B /* Sign_In_ViewController.swift in Sources */,
 				E952BF2A255B5FCF005508EE /* New_Party_ViewController.swift in Sources */,
+				651CFA99255F3AD40006F5E6 /* FriendsScreenViewController.swift in Sources */,
 				E9F52FCA25520F320069243B /* ViewController.swift in Sources */,
+				651CFA89255F37570006F5E6 /* FriendsTableViewCell.swift in Sources */,
+				652D7D32255F1DFC0086EF3C /* YourProfileViewController.swift in Sources */,
+				653C1D75256055390005F2EA /* FriendRequestTableViewCell.swift in Sources */,
+				653C1D6B256045D40005F2EA /* AddFriendsViewController.swift in Sources */,
 				E9F52FC625520F320069243B /* AppDelegate.swift in Sources */,
 				E9F52FC825520F320069243B /* SceneDelegate.swift in Sources */,
+				653C1D702560532C0005F2EA /* FriendRequestsViewController.swift in Sources */,
+				653C1D5D256044B20005F2EA /* AddFriendsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
