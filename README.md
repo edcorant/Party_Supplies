@@ -37,6 +37,7 @@ This app can start by first providing the ability to organize a party and assign
 **Required Must-have Stories**
 * [x] User can register a new account.
 * [x] User can log in.
+* [x] User can add friends.
 * User can create a party and add members.
 * User can create a list of supplies needed for party.
 * Party attendees can choose an item from the list to bring to the party.
@@ -52,7 +53,7 @@ This app can start by first providing the ability to organize a party and assign
 
 Here's a small walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/cgnj3fI.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/J5PJvux.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 
