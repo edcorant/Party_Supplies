@@ -38,13 +38,13 @@ class AddFriendsViewController: UIViewController, UISearchBarDelegate, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "findfriendsCell") as! AddFriendsTableViewCell
         let user  = foundUsers[indexPath.row]
         cell.usernameLabel.text = user.username!
-        cell.requestButton.tag = indexPath.row
-        cell.requestButton.addTarget(self, action: #selector(sendRequestTo), for: .touchUpInside)
+        cell.requestButton.tag = indexPath.row     // getting a crash here
+        cell.requestButton.addTarget(self, action: #selector(sendRequestTo(sender: cell.requestButton, row: indexPath.row)), for: .touchUpInside)
         
         return cell
     }
     
-    @objc func sendRequestTo(sender: UIButton!) {
+    @objc func sendRequestTo(sender: UIButton!, row: Int) {
         let userToAdd = foundUsers[sender.tag]
         let request = PFObject(className: "friendRequest")
         request["fromUser"] = PFUser.current()
@@ -59,23 +59,32 @@ class AddFriendsViewController: UIViewController, UISearchBarDelegate, UITableVi
                 print("Could not send request to user \(userToAdd)")
             }
         }
+        
+        foundUsers.remove(at: row)
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         // print(searchBar.text!)
-        searchUser()
+        if (searchBar.text != "") {
+            searchUser()
+        }
     }
     
     func searchUser() {
         // print("Search User")
+        // initialize a new query
         let query = PFQuery(className: "_User")
+        // look for people who are not currently in our list of friends
         query.whereKey("username", notContainedIn: friends!)
+        // people who are not ourselves
         query.whereKey("username", notEqualTo: PFUser.current()!.username!)
+        // people whose name matches the name we're searching for
         query.whereKey("username", hasPrefix: searchBar.text)
+        
         query.findObjectsInBackground { (users, error) in
             if let users = users as? [PFUser] {
                 self.foundUsers = users
-                // print(self.foundUsers)
+                print(self.foundUsers)
                 self.tableView.reloadData()
             }
         }
