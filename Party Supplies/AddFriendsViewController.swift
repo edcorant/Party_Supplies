@@ -39,33 +39,35 @@ class AddFriendsViewController: UIViewController, UISearchBarDelegate, UITableVi
         let user  = foundUsers[indexPath.row]
         cell.usernameLabel.text = user.username!
         cell.requestButton.tag = indexPath.row     // getting a crash here
-        cell.requestButton.addTarget(self, action: #selector(sendRequestTo(sender: cell.requestButton, row: indexPath.row)), for: .touchUpInside)
+        cell.requestButton.addTarget(self, action: #selector(sendRequestTo), for: .touchUpInside)
         
         return cell
     }
     
-    @objc func sendRequestTo(sender: UIButton!, row: Int) {
+    @objc func sendRequestTo(sender: UIButton!) {
         let userToAdd = foundUsers[sender.tag]
+        foundUsers.remove(at: sender.tag)
         let request = PFObject(className: "friendRequest")
         request["fromUser"] = PFUser.current()
         request["toUser"] = userToAdd
         request["status"] = "requested"
         request.saveInBackground { (success, error) in
             if success {
-                print("Request sent successfully.")
-                sender.removeFromSuperview()
+                print("Request sent successfully to user \(userToAdd.username!).")
             }
             else {
-                print("Could not send request to user \(userToAdd)")
+                print("Could not send request to user \(userToAdd.username!)")
             }
         }
-        
-        foundUsers.remove(at: row)
+        self.tableView.reloadData()
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         // print(searchBar.text!)
-        if (searchBar.text != "") {
+        if (searchBar.text == "") {
+            foundUsers.removeAll()
+            tableView.reloadData()
+        } else {
             searchUser()
         }
     }
@@ -84,7 +86,7 @@ class AddFriendsViewController: UIViewController, UISearchBarDelegate, UITableVi
         query.findObjectsInBackground { (users, error) in
             if let users = users as? [PFUser] {
                 self.foundUsers = users
-                print(self.foundUsers)
+                // print(self.foundUsers)
                 self.tableView.reloadData()
             }
         }
