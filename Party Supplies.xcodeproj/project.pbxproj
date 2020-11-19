@@ -179,11 +179,11 @@
 				E9F52FD025520F330069243B /* LaunchScreen.storyboard */,
 				E9F52FC525520F320069243B /* AppDelegate.swift */,
 				E9F52FC725520F320069243B /* SceneDelegate.swift */,
+				E952BF29255B5FCF005508EE /* New_Party_ViewController.swift */,
 				E9F52FC925520F320069243B /* ViewController.swift */,
 				E9F53001255215990069243B /* Sign_In_ViewController.swift */,
 				E9F52FCE25520F330069243B /* Assets.xcassets */,
 				E9F52FD325520F330069243B /* Info.plist */,
-				E952BF29255B5FCF005508EE /* New_Party_ViewController.swift */,
 			);
 			path = "Party Supplies";
 			sourceTree = "<group>";
