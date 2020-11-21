@@ -23,6 +23,28 @@ class FriendRequestTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    @IBAction func ignoreRequest(_ sender: Any) {
+        UIView.animate(withDuration: 0.3,
+            delay: 0,
+            options: [.curveLinear, .allowUserInteraction, .beginFromCurrentState],
+            animations: {
+                self.alpha = 0
+            }, completion: nil)
+        if let friendRequest = request {
+            let friendRequestId = friendRequest.objectId!
+            let query = PFQuery(className: "friendRequest")
+            query.whereKey("objectId", equalTo: friendRequestId)
+            query.getFirstObjectInBackground { (request, error) in
+                if let error = error {
+                    print("Could not find request. \(error.localizedDescription)")
+                } else {
+                    request!["status"] = "rejected"
+                    request?.saveInBackground()
+                }
+            }
+        }
+    }
 
     @IBAction func acceptRequest(_ sender: Any) {
         UIView.animate(withDuration: 0.3,
@@ -49,7 +71,6 @@ class FriendRequestTableViewCell: UITableViewCell {
                     let friendsRelation = toUser.relation(forKey: "friends")
                     friendsRelation.add(fromUser)
                     toUser.saveInBackground()
-                    /*
                     let query = PFQuery(className: "friendRequest")
                     query.whereKey("objectId", equalTo: friendRequestId)
                     query.getFirstObjectInBackground { (request, error) in
@@ -59,7 +80,7 @@ class FriendRequestTableViewCell: UITableViewCell {
                             request!["status"] = "accepted"
                             request?.saveInBackground()
                         }
-                    }*/
+                    }
                 }
             }
         }
