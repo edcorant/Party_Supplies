@@ -162,7 +162,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYG-Ub-Qgd">
                                 <rect key="frame" x="24" y="162" width="144" height="38"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="08C-RH-HKB"/>
+                                    <constraint firstAttribute="height" constant="38" id="poM-Fu-Czo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Log Out"/>
@@ -174,13 +174,13 @@
                         <viewLayoutGuide key="safeArea" id="cbj-zx-lUk"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="cbj-zx-lUk" firstAttribute="trailing" secondItem="sYG-Ub-Qgd" secondAttribute="trailing" constant="246" id="AEO-j6-Nd0"/>
-                            <constraint firstItem="cbj-zx-lUk" firstAttribute="bottom" secondItem="sYG-Ub-Qgd" secondAttribute="bottom" constant="613" id="PMw-uR-5ZI"/>
-                            <constraint firstItem="56E-dh-iCf" firstAttribute="leading" secondItem="cbj-zx-lUk" secondAttribute="leading" constant="24" id="QTf-Ru-8Ma"/>
-                            <constraint firstItem="56E-dh-iCf" firstAttribute="centerX" secondItem="uDD-Lx-LCF" secondAttribute="centerX" id="Z0v-dh-Hmz"/>
-                            <constraint firstItem="56E-dh-iCf" firstAttribute="top" secondItem="cbj-zx-lUk" secondAttribute="top" constant="17" id="dqb-br-LEq"/>
-                            <constraint firstItem="56E-dh-iCf" firstAttribute="leading" secondItem="sYG-Ub-Qgd" secondAttribute="leading" id="lbL-S7-HSP"/>
-                            <constraint firstItem="sYG-Ub-Qgd" firstAttribute="top" secondItem="56E-dh-iCf" secondAttribute="bottom" constant="8" symbolic="YES" id="wNq-4E-C6W"/>
+                            <constraint firstItem="56E-dh-iCf" firstAttribute="top" secondItem="cbj-zx-lUk" secondAttribute="top" constant="17" id="1LJ-9d-Sjx"/>
+                            <constraint firstItem="56E-dh-iCf" firstAttribute="centerX" secondItem="uDD-Lx-LCF" secondAttribute="centerX" id="1Ng-bz-Pyt"/>
+                            <constraint firstItem="cbj-zx-lUk" firstAttribute="trailing" secondItem="sYG-Ub-Qgd" secondAttribute="trailing" constant="246" id="HDJ-O5-fEu"/>
+                            <constraint firstItem="56E-dh-iCf" firstAttribute="leading" secondItem="cbj-zx-lUk" secondAttribute="leading" constant="24" id="PAf-yJ-Dxl"/>
+                            <constraint firstItem="56E-dh-iCf" firstAttribute="leading" secondItem="sYG-Ub-Qgd" secondAttribute="leading" id="eAB-cc-kGC"/>
+                            <constraint firstItem="sYG-Ub-Qgd" firstAttribute="top" secondItem="56E-dh-iCf" secondAttribute="bottom" constant="8" symbolic="YES" id="vnx-X2-mH1"/>
+                            <constraint firstItem="cbj-zx-lUk" firstAttribute="bottom" secondItem="sYG-Ub-Qgd" secondAttribute="bottom" constant="613" id="xuB-GX-FYO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Account" id="2mO-ci-awg"/>

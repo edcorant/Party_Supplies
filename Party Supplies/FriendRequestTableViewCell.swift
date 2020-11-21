@@ -38,8 +38,10 @@ class FriendRequestTableViewCell: UITableViewCell {
             let fromUser = request!["fromUser"] as! PFUser
             
             let friendRequestId = friendRequest.objectId!
+            let toUserId = toUser.objectId!
+            let fromUserId = fromUser.objectId!
             
-            PFCloud.callFunction(inBackground: "addFriendToFriendsRelation", withParameters: (["friendRequest":friendRequestId])) { (response, error) in
+            PFCloud.callFunction(inBackground: "addFriendToFriendsRelation", withParameters: (["friendRequest":friendRequestId,"toUserId":toUserId,"fromUserId":fromUserId])) { (response, error) in
                 if let error = error {
                     print("Failed to establish relationship with \(error.localizedDescription)")
                 }
@@ -47,7 +49,7 @@ class FriendRequestTableViewCell: UITableViewCell {
                     let friendsRelation = toUser.relation(forKey: "friends")
                     friendsRelation.add(fromUser)
                     toUser.saveInBackground()
-                    
+                    /*
                     let query = PFQuery(className: "friendRequest")
                     query.whereKey("objectId", equalTo: friendRequestId)
                     query.getFirstObjectInBackground { (request, error) in
@@ -57,7 +59,7 @@ class FriendRequestTableViewCell: UITableViewCell {
                             request!["status"] = "accepted"
                             request?.saveInBackground()
                         }
-                    }
+                    }*/
                 }
             }
         }
