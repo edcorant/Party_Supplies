@@ -46,7 +46,7 @@ class Sign_In_ViewController: UIViewController {
                 UserDefaults.standard.set(true, forKey: "userloggedin")
             }
             else {
-                print("Error: \(error?.localizedDescription ?? "Sign In Failed").")
+                print("Error: Sign In Failed.")
             }
         }
         
@@ -69,7 +69,7 @@ class Sign_In_ViewController: UIViewController {
             }
             
             else {
-                print("Error: \(error?.localizedDescription ?? "Sign Up Failed").")
+                print("Error: Sign Up Failed")
             }
         }
     }

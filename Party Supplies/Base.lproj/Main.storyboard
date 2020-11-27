@@ -114,7 +114,7 @@
         <!--Your Parties-->
         <scene sceneID="YoY-TM-Jv6">
             <objects>
-                <viewController id="zDs-k3-2HC" userLabel="Your Parties" sceneMemberID="viewController">
+                <viewController id="zDs-k3-2HC" userLabel="Your Parties" customClass="YourPartiesViewController" customModule="Party_Supplies" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cO8-sK-tqg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,6 +122,32 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="O60-Ce-xE3">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="yourpartiesCell" rowHeight="56" id="MUT-3L-ws0" customClass="YourPartiesTableViewCell" customModule="Party_Supplies" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MUT-3L-ws0" id="2zI-TI-C7x">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Party Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Qw-Eg-kK4">
+                                                    <rect key="frame" x="20" y="11" width="89.5" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7Qw-Eg-kK4" firstAttribute="top" secondItem="2zI-TI-C7x" secondAttribute="topMargin" id="Dzi-an-9g9"/>
+                                                <constraint firstItem="7Qw-Eg-kK4" firstAttribute="leading" secondItem="2zI-TI-C7x" secondAttribute="leadingMargin" id="gBD-vo-4aw"/>
+                                                <constraint firstItem="7Qw-Eg-kK4" firstAttribute="bottom" secondItem="2zI-TI-C7x" secondAttribute="bottomMargin" id="u4r-H6-sfA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="partyNameLabel" destination="7Qw-Eg-kK4" id="fj6-0C-ceO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8FB-hW-n8n"/>
@@ -136,14 +162,121 @@
                     <navigationItem key="navigationItem" title="Your Parties" id="aCl-Dn-egd">
                         <barButtonItem key="rightBarButtonItem" title="New Party" id="zkF-74-95c">
                             <connections>
-                                <segue destination="lBO-oK-dzr" kind="presentation" modalPresentationStyle="fullScreen" id="OnG-ki-xg6"/>
+                                <segue destination="ejq-mE-11o" kind="presentation" modalPresentationStyle="fullScreen" id="0eT-dw-pEF"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="O60-Ce-xE3" id="OtK-lM-jvu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="87c-es-ARa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3133" y="-238"/>
+            <point key="canvasLocation" x="3131.884057971015" y="-238.39285714285714"/>
+        </scene>
+        <!--Host a New Party!-->
+        <scene sceneID="KS7-fB-PSw">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="ejq-mE-11o" customClass="NewPartyViewController" customModule="Party_Supplies" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jhu-1i-wjW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0nb-sC-u2J">
+                                <rect key="frame" x="0.0" y="38" width="414" height="44"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem title="Host a New Party!" id="5Rg-Gy-Lk3">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="scy-Ji-UNr">
+                                            <connections>
+                                                <action selector="onCancel:" destination="ejq-mE-11o" id="3fZ-Sz-TGA"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Create" id="daT-Hz-6p8">
+                                            <connections>
+                                                <action selector="onCreate:" destination="ejq-mE-11o" id="gae-EL-08C"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Party Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7C-hg-jWi">
+                                <rect key="frame" x="20" y="96" width="118" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="6i6-Ad-Rcq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Party Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYL-tS-yG8">
+                                <rect key="frame" x="20" y="185" width="118" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="e2E-bw-bDt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4X6-Qt-ioT">
+                                <rect key="frame" x="20" y="274" width="118" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="8V4-us-LaS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F8h-zH-ONl">
+                                <rect key="frame" x="20" y="143" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tkM-mb-y0j">
+                                <rect key="frame" x="20" y="232" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="vrr-pk-dro">
+                                <rect key="frame" x="91" y="321" width="232" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="La3-Jz-6nq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F8h-zH-ONl" firstAttribute="centerX" secondItem="0nb-sC-u2J" secondAttribute="centerX" id="9yC-ty-AYI"/>
+                            <constraint firstItem="F8h-zH-ONl" firstAttribute="leading" secondItem="LYL-tS-yG8" secondAttribute="leading" id="Dcc-vP-X7l"/>
+                            <constraint firstItem="tkM-mb-y0j" firstAttribute="top" secondItem="LYL-tS-yG8" secondAttribute="bottom" constant="8" id="F9g-Z5-9hc"/>
+                            <constraint firstItem="tkM-mb-y0j" firstAttribute="leading" secondItem="4X6-Qt-ioT" secondAttribute="leading" id="G2c-GJ-Z5R"/>
+                            <constraint firstItem="q7C-hg-jWi" firstAttribute="trailing" secondItem="LYL-tS-yG8" secondAttribute="trailing" id="Grs-j6-Vnk"/>
+                            <constraint firstItem="4X6-Qt-ioT" firstAttribute="top" secondItem="tkM-mb-y0j" secondAttribute="bottom" constant="8" id="IUm-28-Se1"/>
+                            <constraint firstItem="q7C-hg-jWi" firstAttribute="leading" secondItem="jhu-1i-wjW" secondAttribute="leadingMargin" id="JZF-gj-fdQ"/>
+                            <constraint firstItem="La3-Jz-6nq" firstAttribute="bottom" secondItem="4X6-Qt-ioT" secondAttribute="bottom" constant="549" id="NSc-PA-a1o"/>
+                            <constraint firstItem="La3-Jz-6nq" firstAttribute="trailing" secondItem="q7C-hg-jWi" secondAttribute="trailing" constant="276" id="PAl-cT-155"/>
+                            <constraint firstItem="LYL-tS-yG8" firstAttribute="leading" secondItem="tkM-mb-y0j" secondAttribute="leading" id="YG8-et-1Of"/>
+                            <constraint firstItem="LYL-tS-yG8" firstAttribute="top" secondItem="F8h-zH-ONl" secondAttribute="bottom" constant="8" id="dmo-qg-MFQ"/>
+                            <constraint firstItem="F8h-zH-ONl" firstAttribute="top" secondItem="q7C-hg-jWi" secondAttribute="bottom" constant="8" id="kFv-YM-pHZ"/>
+                            <constraint firstItem="q7C-hg-jWi" firstAttribute="leading" secondItem="F8h-zH-ONl" secondAttribute="leading" id="nNM-5e-O6s"/>
+                            <constraint firstItem="0nb-sC-u2J" firstAttribute="trailing" secondItem="La3-Jz-6nq" secondAttribute="trailing" id="qUa-xl-DlK"/>
+                            <constraint firstItem="0nb-sC-u2J" firstAttribute="leading" secondItem="La3-Jz-6nq" secondAttribute="leading" id="rIi-p6-shX"/>
+                            <constraint firstItem="LYL-tS-yG8" firstAttribute="trailing" secondItem="4X6-Qt-ioT" secondAttribute="trailing" id="sNB-3x-Ow7"/>
+                            <constraint firstItem="F8h-zH-ONl" firstAttribute="trailing" secondItem="tkM-mb-y0j" secondAttribute="trailing" id="wAS-bR-1jB"/>
+                            <constraint firstItem="0nb-sC-u2J" firstAttribute="top" secondItem="jhu-1i-wjW" secondAttribute="top" constant="38" id="z0b-gH-U8e"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Host a New Party!" id="Srp-Lh-6Y8">
+                        <barButtonItem key="rightBarButtonItem" title="Create" id="Ag5-e3-nvd"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="partyAddresText" destination="tkM-mb-y0j" id="m1h-XU-voo"/>
+                        <outlet property="partyDatePicker" destination="vrr-pk-dro" id="iSV-Ri-Tpq"/>
+                        <outlet property="partyNameText" destination="F8h-zH-ONl" id="b2x-MT-wow"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZCl-wg-tEQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4113.04347826087" y="-276.5625"/>
         </scene>
         <!--Account-->
         <scene sceneID="UQ1-lr-iCb">
@@ -192,16 +325,6 @@
             </objects>
             <point key="canvasLocation" x="2966.666666666667" y="1409.5982142857142"/>
         </scene>
-        <!--New_Party-->
-        <scene sceneID="hdk-gM-RQk">
-            <objects>
-                <viewControllerPlaceholder storyboardName="New_Party" id="lBO-oK-dzr" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="zdU-9P-Ura"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Phe-pc-unP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4090" y="-238"/>
-        </scene>
         <!--Friends Screen View Controller-->
         <scene sceneID="Wst-mE-Zu4">
             <objects>
@@ -214,7 +337,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCell" rowHeight="62" id="C7T-8H-Tch" customClass="FriendsTableViewCell" customModule="Party_Supplies" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="userCell" rowHeight="62" id="C7T-8H-Tch" customClass="FriendsTableViewCell" customModule="Party_Supplies" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C7T-8H-Tch" id="9EK-ZK-I7O">
@@ -353,7 +476,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="friendrequestCell" rowHeight="62" id="FDd-25-Jp5" customClass="FriendRequestTableViewCell" customModule="Party_Supplies" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="friendrequestCell" rowHeight="62" id="FDd-25-Jp5" customClass="FriendRequestTableViewCell" customModule="Party_Supplies" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FDd-25-Jp5" id="FbW-bM-Si7">

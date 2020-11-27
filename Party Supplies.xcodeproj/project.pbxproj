@@ -15,10 +15,13 @@
 		653C1D6B256045D40005F2EA /* AddFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C1D6A256045D40005F2EA /* AddFriendsViewController.swift */; };
 		653C1D702560532C0005F2EA /* FriendRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C1D6F2560532C0005F2EA /* FriendRequestsViewController.swift */; };
 		653C1D75256055390005F2EA /* FriendRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C1D74256055390005F2EA /* FriendRequestTableViewCell.swift */; };
+		657529DE2571BDDD000D3222 /* YourPartiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657529DD2571BDDD000D3222 /* YourPartiesViewController.swift */; };
+		657529E32571BE96000D3222 /* YourPartiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657529E22571BE96000D3222 /* YourPartiesTableViewCell.swift */; };
+		65D336FF2571AEAE00569CED /* NewPartyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D336FE2571AEAE00569CED /* NewPartyViewController.swift */; };
 		7099630841F11C320D4E045C /* Pods_Party_SuppliesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891FE08825AD6691932341B1 /* Pods_Party_SuppliesTests.framework */; };
 		B90486F2120DD63F46D6A578 /* Pods_Party_Supplies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955F6A16015C37D0CD0D0597 /* Pods_Party_Supplies.framework */; };
 		E952BF22255B56E3005508EE /* New_Party.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E952BF21255B56E3005508EE /* New_Party.storyboard */; };
-		E952BF2A255B5FCF005508EE /* New_Party_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E952BF29255B5FCF005508EE /* New_Party_ViewController.swift */; };
+		E952BF2A255B5FCF005508EE /* OLD_New_Party_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E952BF29255B5FCF005508EE /* OLD_New_Party_ViewController.swift */; };
 		E9F52FC625520F320069243B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F52FC525520F320069243B /* AppDelegate.swift */; };
 		E9F52FC825520F320069243B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F52FC725520F320069243B /* SceneDelegate.swift */; };
 		E9F52FCA25520F320069243B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F52FC925520F320069243B /* ViewController.swift */; };
@@ -61,11 +64,14 @@
 		653C1D6A256045D40005F2EA /* AddFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendsViewController.swift; sourceTree = "<group>"; };
 		653C1D6F2560532C0005F2EA /* FriendRequestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestsViewController.swift; sourceTree = "<group>"; };
 		653C1D74256055390005F2EA /* FriendRequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestTableViewCell.swift; sourceTree = "<group>"; };
+		657529DD2571BDDD000D3222 /* YourPartiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourPartiesViewController.swift; sourceTree = "<group>"; };
+		657529E22571BE96000D3222 /* YourPartiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourPartiesTableViewCell.swift; sourceTree = "<group>"; };
+		65D336FE2571AEAE00569CED /* NewPartyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPartyViewController.swift; sourceTree = "<group>"; };
 		891FE08825AD6691932341B1 /* Pods_Party_SuppliesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Party_SuppliesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		955F6A16015C37D0CD0D0597 /* Pods_Party_Supplies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Party_Supplies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA72674CC66D7FC37BAEDB64 /* Pods-Party SuppliesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Party SuppliesTests.debug.xcconfig"; path = "Target Support Files/Pods-Party SuppliesTests/Pods-Party SuppliesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E952BF21255B56E3005508EE /* New_Party.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = New_Party.storyboard; sourceTree = "<group>"; };
-		E952BF29255B5FCF005508EE /* New_Party_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New_Party_ViewController.swift; sourceTree = "<group>"; };
+		E952BF29255B5FCF005508EE /* OLD_New_Party_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLD_New_Party_ViewController.swift; sourceTree = "<group>"; };
 		E9F52FC225520F320069243B /* Party Supplies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Party Supplies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F52FC525520F320069243B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9F52FC725520F320069243B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -171,6 +177,8 @@
 			children = (
 				653C1D502560428A0005F2EA /* Friends Cells */,
 				E9F52FCB25520F320069243B /* Main.storyboard */,
+				657529E22571BE96000D3222 /* YourPartiesTableViewCell.swift */,
+				657529DD2571BDDD000D3222 /* YourPartiesViewController.swift */,
 				653C1D6F2560532C0005F2EA /* FriendRequestsViewController.swift */,
 				653C1D6A256045D40005F2EA /* AddFriendsViewController.swift */,
 				651CFA98255F3AD40006F5E6 /* FriendsScreenViewController.swift */,
@@ -179,7 +187,8 @@
 				E9F52FD025520F330069243B /* LaunchScreen.storyboard */,
 				E9F52FC525520F320069243B /* AppDelegate.swift */,
 				E9F52FC725520F320069243B /* SceneDelegate.swift */,
-				E952BF29255B5FCF005508EE /* New_Party_ViewController.swift */,
+				65D336FE2571AEAE00569CED /* NewPartyViewController.swift */,
+				E952BF29255B5FCF005508EE /* OLD_New_Party_ViewController.swift */,
 				E9F52FC925520F320069243B /* ViewController.swift */,
 				E9F53001255215990069243B /* Sign_In_ViewController.swift */,
 				E9F52FCE25520F330069243B /* Assets.xcassets */,
@@ -446,14 +455,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9F53002255215990069243B /* Sign_In_ViewController.swift in Sources */,
-				E952BF2A255B5FCF005508EE /* New_Party_ViewController.swift in Sources */,
+				E952BF2A255B5FCF005508EE /* OLD_New_Party_ViewController.swift in Sources */,
 				651CFA99255F3AD40006F5E6 /* FriendsScreenViewController.swift in Sources */,
+				657529E32571BE96000D3222 /* YourPartiesTableViewCell.swift in Sources */,
 				E9F52FCA25520F320069243B /* ViewController.swift in Sources */,
 				651CFA89255F37570006F5E6 /* FriendsTableViewCell.swift in Sources */,
 				652D7D32255F1DFC0086EF3C /* YourProfileViewController.swift in Sources */,
 				653C1D75256055390005F2EA /* FriendRequestTableViewCell.swift in Sources */,
+				65D336FF2571AEAE00569CED /* NewPartyViewController.swift in Sources */,
 				653C1D6B256045D40005F2EA /* AddFriendsViewController.swift in Sources */,
 				E9F52FC625520F320069243B /* AppDelegate.swift in Sources */,
+				657529DE2571BDDD000D3222 /* YourPartiesViewController.swift in Sources */,
 				E9F52FC825520F320069243B /* SceneDelegate.swift in Sources */,
 				653C1D702560532C0005F2EA /* FriendRequestsViewController.swift in Sources */,
 				653C1D5D256044B20005F2EA /* AddFriendsTableViewCell.swift in Sources */,
