@@ -21,6 +21,10 @@ class YourPartiesViewController: UIViewController, UITableViewDelegate, UITableV
         getParties()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        getParties()
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return parties.count
     }
