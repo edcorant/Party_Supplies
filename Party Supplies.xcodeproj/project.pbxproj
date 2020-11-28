@@ -22,6 +22,7 @@
 		B90486F2120DD63F46D6A578 /* Pods_Party_Supplies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955F6A16015C37D0CD0D0597 /* Pods_Party_Supplies.framework */; };
 		E952BF22255B56E3005508EE /* New_Party.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E952BF21255B56E3005508EE /* New_Party.storyboard */; };
 		E952BF2A255B5FCF005508EE /* OLD_New_Party_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E952BF29255B5FCF005508EE /* OLD_New_Party_ViewController.swift */; };
+		E9B8CDDA25721044001A217E /* PartyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CDD925721044001A217E /* PartyDetailsViewController.swift */; };
 		E9F52FC625520F320069243B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F52FC525520F320069243B /* AppDelegate.swift */; };
 		E9F52FC825520F320069243B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F52FC725520F320069243B /* SceneDelegate.swift */; };
 		E9F52FCA25520F320069243B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F52FC925520F320069243B /* ViewController.swift */; };
@@ -72,6 +73,7 @@
 		BA72674CC66D7FC37BAEDB64 /* Pods-Party SuppliesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Party SuppliesTests.debug.xcconfig"; path = "Target Support Files/Pods-Party SuppliesTests/Pods-Party SuppliesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E952BF21255B56E3005508EE /* New_Party.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = New_Party.storyboard; sourceTree = "<group>"; };
 		E952BF29255B5FCF005508EE /* OLD_New_Party_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLD_New_Party_ViewController.swift; sourceTree = "<group>"; };
+		E9B8CDD925721044001A217E /* PartyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyDetailsViewController.swift; sourceTree = "<group>"; };
 		E9F52FC225520F320069243B /* Party Supplies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Party Supplies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F52FC525520F320069243B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9F52FC725520F320069243B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				E9F53001255215990069243B /* Sign_In_ViewController.swift */,
 				E9F52FCE25520F330069243B /* Assets.xcassets */,
 				E9F52FD325520F330069243B /* Info.plist */,
+				E9B8CDD925721044001A217E /* PartyDetailsViewController.swift */,
 			);
 			path = "Party Supplies";
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9B8CDDA25721044001A217E /* PartyDetailsViewController.swift in Sources */,
 				E9F53002255215990069243B /* Sign_In_ViewController.swift in Sources */,
 				E952BF2A255B5FCF005508EE /* OLD_New_Party_ViewController.swift in Sources */,
 				651CFA99255F3AD40006F5E6 /* FriendsScreenViewController.swift in Sources */,
