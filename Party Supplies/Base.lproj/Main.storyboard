@@ -109,7 +109,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="140.57971014492756" y="138.61607142857142"/>
+            <point key="canvasLocation" x="139" y="-50"/>
         </scene>
         <!--Your Parties-->
         <scene sceneID="YoY-TM-Jv6">
@@ -145,6 +145,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="partyNameLabel" destination="7Qw-Eg-kK4" id="fj6-0C-ceO"/>
+                                            <segue destination="2Ul-GI-MUs" kind="show" identifier="partyDetails" id="fQB-O2-7cG"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -172,7 +173,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="87c-es-ARa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3131.884057971015" y="-238.39285714285714"/>
+            <point key="canvasLocation" x="2967" y="-649"/>
         </scene>
         <!--Host a New Party!-->
         <scene sceneID="KS7-fB-PSw">
@@ -276,7 +277,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZCl-wg-tEQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4113.04347826087" y="-276.5625"/>
+            <point key="canvasLocation" x="3858" y="-1032"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xZw-IY-G1Q">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="2Ul-GI-MUs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dbe-9n-rDH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="39B-ve-eu7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MG9-ED-gYk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uks-Lt-FmH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3858" y="-321"/>
         </scene>
         <!--Account-->
         <scene sceneID="UQ1-lr-iCb">
@@ -560,7 +577,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7vK-c3-6k1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1035" y="139"/>
+            <point key="canvasLocation" x="1028" y="-50"/>
         </scene>
         <!--Your Parties-->
         <scene sceneID="v6v-WG-6uw">
@@ -579,7 +596,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qie-jn-9d6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2057" y="-238"/>
+            <point key="canvasLocation" x="2057" y="-650"/>
         </scene>
         <!--Upcoming-->
         <scene sceneID="ssx-YI-bZz">
@@ -595,7 +612,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hS4-co-VZt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2057" y="-979"/>
+            <point key="canvasLocation" x="2057" y="-1837"/>
         </scene>
         <!--Your Profile-->
         <scene sceneID="LAZ-KM-BOc">
