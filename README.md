@@ -38,8 +38,8 @@ This app can start by first providing the ability to organize a party and assign
 * [x] User can register a new account.
 * [x] User can log in.
 * [x] User can add friends.
-* User can create a party and add members.
-* User can create a list of supplies needed for party.
+* [x] User can create a party and add members.
+* [x] User can create a list of supplies needed for party.
 * Party attendees can choose an item from the list to bring to the party.
 
 **Optional Nice-to-have Stories**
