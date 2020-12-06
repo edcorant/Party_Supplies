@@ -46,7 +46,17 @@ class YourPartiesViewController: UIViewController, UITableViewDelegate, UITableV
                 self.tableView.reloadData()
             }
         }
-        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "partyDetails"
+        {
+            if let destination = segue.destination as? PartyDetailsViewController
+            {
+                let indexPath = tableView.indexPathForSelectedRow!
+                destination.party = parties[indexPath.row]
+            }
+        }
     }
 
 }
