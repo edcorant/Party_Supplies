@@ -24,6 +24,10 @@
 		B90486F2120DD63F46D6A578 /* Pods_Party_Supplies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955F6A16015C37D0CD0D0597 /* Pods_Party_Supplies.framework */; };
 		E952BF22255B56E3005508EE /* New_Party.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E952BF21255B56E3005508EE /* New_Party.storyboard */; };
 		E952BF2A255B5FCF005508EE /* OLD_New_Party_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E952BF29255B5FCF005508EE /* OLD_New_Party_ViewController.swift */; };
+		E95679AC257F2DE000AC23A2 /* Upcoming_Party_View_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95679AB257F2DE000AC23A2 /* Upcoming_Party_View_Controller.swift */; };
+		E95679B1257F2F9D00AC23A2 /* Upcoming_Party_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95679B0257F2F9D00AC23A2 /* Upcoming_Party_Cell.swift */; };
+		E95679B6257F31EE00AC23A2 /* Upcoming_Party_Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95679B5257F31EE00AC23A2 /* Upcoming_Party_Item.swift */; };
+		E95679BB257F329F00AC23A2 /* Upcoming_View_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95679BA257F329F00AC23A2 /* Upcoming_View_Controller.swift */; };
 		E9B8CDDA25721044001A217E /* PartyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CDD925721044001A217E /* PartyDetailsViewController.swift */; };
 		E9F52FC625520F320069243B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F52FC525520F320069243B /* AppDelegate.swift */; };
 		E9F52FC825520F320069243B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F52FC725520F320069243B /* SceneDelegate.swift */; };
@@ -77,6 +81,10 @@
 		BA72674CC66D7FC37BAEDB64 /* Pods-Party SuppliesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Party SuppliesTests.debug.xcconfig"; path = "Target Support Files/Pods-Party SuppliesTests/Pods-Party SuppliesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E952BF21255B56E3005508EE /* New_Party.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = New_Party.storyboard; sourceTree = "<group>"; };
 		E952BF29255B5FCF005508EE /* OLD_New_Party_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLD_New_Party_ViewController.swift; sourceTree = "<group>"; };
+		E95679AB257F2DE000AC23A2 /* Upcoming_Party_View_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Upcoming_Party_View_Controller.swift; sourceTree = "<group>"; };
+		E95679B0257F2F9D00AC23A2 /* Upcoming_Party_Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Upcoming_Party_Cell.swift; sourceTree = "<group>"; };
+		E95679B5257F31EE00AC23A2 /* Upcoming_Party_Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Upcoming_Party_Item.swift; sourceTree = "<group>"; };
+		E95679BA257F329F00AC23A2 /* Upcoming_View_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Upcoming_View_Controller.swift; sourceTree = "<group>"; };
 		E9B8CDD925721044001A217E /* PartyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyDetailsViewController.swift; sourceTree = "<group>"; };
 		E9F52FC225520F320069243B /* Party Supplies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Party Supplies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F52FC525520F320069243B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +137,7 @@
 				651CFA88255F37570006F5E6 /* FriendsTableViewCell.swift */,
 				653C1D5C256044B20005F2EA /* AddFriendsTableViewCell.swift */,
 				653C1D74256055390005F2EA /* FriendRequestTableViewCell.swift */,
+				E95679B5257F31EE00AC23A2 /* Upcoming_Party_Item.swift */,
 			);
 			name = "Friends Cells";
 			sourceTree = "<group>";
@@ -198,10 +207,13 @@
 				E952BF29255B5FCF005508EE /* OLD_New_Party_ViewController.swift */,
 				E9F52FC925520F320069243B /* ViewController.swift */,
 				E9F53001255215990069243B /* Sign_In_ViewController.swift */,
-				E9F52FCE25520F330069243B /* Assets.xcassets */,
-				E9F52FD325520F330069243B /* Info.plist */,
 				E9B8CDD925721044001A217E /* PartyDetailsViewController.swift */,
 				657529EF257C7EA3000D3222 /* AddSuppliesViewController.swift */,
+				E95679AB257F2DE000AC23A2 /* Upcoming_Party_View_Controller.swift */,
+				E95679B0257F2F9D00AC23A2 /* Upcoming_Party_Cell.swift */,
+				E95679BA257F329F00AC23A2 /* Upcoming_View_Controller.swift */,
+				E9F52FD325520F330069243B /* Info.plist */,
+				E9F52FCE25520F330069243B /* Assets.xcassets */,
 			);
 			path = "Party Supplies";
 			sourceTree = "<group>";
@@ -463,9 +475,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E95679AC257F2DE000AC23A2 /* Upcoming_Party_View_Controller.swift in Sources */,
 				E9B8CDDA25721044001A217E /* PartyDetailsViewController.swift in Sources */,
+				E95679B6257F31EE00AC23A2 /* Upcoming_Party_Item.swift in Sources */,
 				E9F53002255215990069243B /* Sign_In_ViewController.swift in Sources */,
 				E952BF2A255B5FCF005508EE /* OLD_New_Party_ViewController.swift in Sources */,
+				E95679B1257F2F9D00AC23A2 /* Upcoming_Party_Cell.swift in Sources */,
 				651CFA99255F3AD40006F5E6 /* FriendsScreenViewController.swift in Sources */,
 				657529E32571BE96000D3222 /* YourPartiesTableViewCell.swift in Sources */,
 				657529F0257C7EA3000D3222 /* AddSuppliesViewController.swift in Sources */,
@@ -480,6 +495,7 @@
 				657529DE2571BDDD000D3222 /* YourPartiesViewController.swift in Sources */,
 				E9F52FC825520F320069243B /* SceneDelegate.swift in Sources */,
 				653C1D702560532C0005F2EA /* FriendRequestsViewController.swift in Sources */,
+				E95679BB257F329F00AC23A2 /* Upcoming_View_Controller.swift in Sources */,
 				653C1D5D256044B20005F2EA /* AddFriendsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
