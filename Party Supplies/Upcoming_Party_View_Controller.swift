@@ -43,8 +43,17 @@ class Upcoming_Party_View_Controller: UIViewController, UITableViewDelegate, UIT
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = table_view.dequeueReusableCell(withIdentifier: "Upcoming_Party_Cell") as! Upcoming_Party_Cell
+        
+        let supplies_checked = party["Supplies_Checked"] as? Array<String> ?? []
+        
         cell.supply_name.text = supplies[indexPath.row]
         cell.supply_circle.tag = indexPath.row
+        
+        if supplies_checked.contains(cell.supply_name.text!) {
+            cell.user_is_bringing = !cell.user_is_bringing
+            cell.supply_circle.setImage(UIImage(systemName: "checkmark.circle"), for: .normal)
+        }
+        
         return cell
     }
     
@@ -68,10 +77,31 @@ class Upcoming_Party_View_Controller: UIViewController, UITableViewDelegate, UIT
         
         if cell.user_is_bringing {
             cell.supply_circle.setImage(UIImage(systemName: "checkmark.circle"), for: .normal)
-        }
+            
+            if party["Supplies_Checked"] == nil {
+                var temp = [String]()
+                temp.append(cell.supply_name.text!)
+                party["Supplies_Checked"] = temp
+            }
+            else {
+                var supplies_checked = party["Supplies_Checked"] as! Array<String>
+                supplies_checked.append(cell.supply_name.text!)
+                party["Supplies_Checked"] = supplies_checked
+                }
+            }
         else {
             cell.supply_circle.setImage(UIImage(systemName: "circle"), for: .normal)
+            
+            var supplies_checked = party["Supplies_Checked"] as! Array<String>
+            if let index = supplies_checked.firstIndex(of: cell.supply_name.text!) {
+                supplies_checked.remove(at: index)
+            }
+            party["Supplies_Checked"] = supplies_checked
+        }
+        party.saveInBackground { (success, error) in
+        if let error = error {
+            print("Failed to save supply check with error: \(error.localizedDescription).")
+            }
         }
     }
-    
 }

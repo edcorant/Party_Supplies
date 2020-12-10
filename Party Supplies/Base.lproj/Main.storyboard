@@ -690,7 +690,7 @@
         <scene sceneID="v6v-WG-6uw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GHk-GO-Sxs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Your Parties" id="aBu-Uk-Qra"/>
+                    <tabBarItem key="tabBarItem" title="Your Parties" image="face.smiling" catalog="system" id="aBu-Uk-Qra"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fHl-R1-wgz">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -826,7 +826,7 @@
                                 <rect key="frame" x="0.0" y="247" width="414" height="649"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Upcoming_Party_Cell" id="w1u-ji-Nf0" customClass="Upcoming_Party_Cell" customModule="Party_Supplies" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Upcoming_Party_Cell" id="w1u-ji-Nf0" customClass="Upcoming_Party_Cell" customModule="Party_Supplies" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w1u-ji-Nf0" id="su7-sj-6sg">
@@ -895,7 +895,7 @@
         <scene sceneID="LAZ-KM-BOc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="giT-dS-3el" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Your Profile" id="59Y-IS-dF8"/>
+                    <tabBarItem key="tabBarItem" title="Your Profile" image="person.crop.square" catalog="system" id="59Y-IS-dF8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UVB-uZ-rp5">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -914,7 +914,7 @@
         <scene sceneID="i1n-5n-RWk">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="osk-bq-bjZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Friends" id="rmz-yU-YRb"/>
+                    <tabBarItem key="tabBarItem" title="Friends" image="person.2" catalog="system" id="rmz-yU-YRb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VVH-FE-Ccu">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -933,7 +933,7 @@
         <scene sceneID="Ael-rN-YQc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tbt-AN-dxR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Upcoming" id="g3c-ob-ROr" userLabel="Upcoming"/>
+                    <tabBarItem key="tabBarItem" title="Upcoming" image="music.quarternote.3" catalog="system" id="g3c-ob-ROr" userLabel="Upcoming"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5zn-JZ-VIP">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -952,6 +952,10 @@
     <resources>
         <image name="arrowshape.turn.up.right" catalog="system" width="128" height="106"/>
         <image name="circle" catalog="system" width="128" height="121"/>
+        <image name="face.smiling" catalog="system" width="128" height="121"/>
+        <image name="music.quarternote.3" catalog="system" width="128" height="103"/>
+        <image name="person.2" catalog="system" width="128" height="81"/>
+        <image name="person.crop.square" catalog="system" width="128" height="114"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
