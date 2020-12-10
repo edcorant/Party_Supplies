@@ -33,6 +33,7 @@ class NewPartyViewController: UIViewController {
         let party = PFObject(className: "Parties")
         
         party["Owner"] = PFUser.current()
+        party["Owner_Username"] = PFUser.current()!.username
         party["Name"] = partyNameText.text!
         party["Date"] = partyDatePicker.date
         party["Address"] = partyAddresText.text!

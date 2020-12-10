@@ -14,7 +14,7 @@ class Upcoming_View_Controller: UIViewController, UITableViewDelegate, UITableVi
     
     var parties: [PFObject]!
     var user: PFUser?
-    var friends = [PFUser]()
+    var friends = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +22,12 @@ class Upcoming_View_Controller: UIViewController, UITableViewDelegate, UITableVi
         table_view.dataSource = self
         table_view.delegate = self
         user = PFUser.current()
+        getFriendsForUser()
+        get_parties()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        // print(self.friends)
         getFriendsForUser()
         get_parties()
     }
@@ -35,10 +41,12 @@ class Upcoming_View_Controller: UIViewController, UITableViewDelegate, UITableVi
          */
         
         let query = PFQuery(className: "Parties")
-        query.whereKey("Owner", containedIn: friends)
-        query.whereKey("Owner", equalTo: user!)
+        query.whereKey("Owner_Username", containedIn: friends)
+        query.addAscendingOrder("Date")
+        // query.whereKey("Owner", equalTo: user!)
         query.findObjectsInBackground { (parties, error) in
             if let parties = parties {
+                // print(parties)
                 self.parties = parties
                 self.table_view.reloadData()
             }
@@ -52,7 +60,17 @@ class Upcoming_View_Controller: UIViewController, UITableViewDelegate, UITableVi
         {
             relationQuery.findObjectsInBackground { (friends, error) in
                 if let friends = friends {
-                    self.friends = friends as! [PFUser]
+                    
+                    var friendsArray = [String]()
+                    
+                    for user in friends {
+                        let user_copy = user as! PFUser
+                        friendsArray.append(user_copy.username!)
+                    }
+                    
+                    friendsArray.append(PFUser.current()!.username!)
+                    
+                    self.friends = friendsArray
                 }
             }
         }
