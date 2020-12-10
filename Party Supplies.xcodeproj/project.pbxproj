@@ -31,7 +31,6 @@
 		E9B8CDDA25721044001A217E /* PartyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CDD925721044001A217E /* PartyDetailsViewController.swift */; };
 		E9F52FC625520F320069243B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F52FC525520F320069243B /* AppDelegate.swift */; };
 		E9F52FC825520F320069243B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F52FC725520F320069243B /* SceneDelegate.swift */; };
-		E9F52FCA25520F320069243B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F52FC925520F320069243B /* ViewController.swift */; };
 		E9F52FCD25520F320069243B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F52FCB25520F320069243B /* Main.storyboard */; };
 		E9F52FCF25520F330069243B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9F52FCE25520F330069243B /* Assets.xcassets */; };
 		E9F52FD225520F330069243B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F52FD025520F330069243B /* LaunchScreen.storyboard */; };
@@ -89,7 +88,6 @@
 		E9F52FC225520F320069243B /* Party Supplies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Party Supplies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F52FC525520F320069243B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9F52FC725520F320069243B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E9F52FC925520F320069243B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E9F52FCC25520F320069243B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9F52FCE25520F330069243B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9F52FD125520F330069243B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -205,7 +203,6 @@
 				E9F52FC725520F320069243B /* SceneDelegate.swift */,
 				65D336FE2571AEAE00569CED /* NewPartyViewController.swift */,
 				E952BF29255B5FCF005508EE /* OLD_New_Party_ViewController.swift */,
-				E9F52FC925520F320069243B /* ViewController.swift */,
 				E9F53001255215990069243B /* Sign_In_ViewController.swift */,
 				E9B8CDD925721044001A217E /* PartyDetailsViewController.swift */,
 				657529EF257C7EA3000D3222 /* AddSuppliesViewController.swift */,
@@ -484,7 +481,6 @@
 				651CFA99255F3AD40006F5E6 /* FriendsScreenViewController.swift in Sources */,
 				657529E32571BE96000D3222 /* YourPartiesTableViewCell.swift in Sources */,
 				657529F0257C7EA3000D3222 /* AddSuppliesViewController.swift in Sources */,
-				E9F52FCA25520F320069243B /* ViewController.swift in Sources */,
 				651CFA89255F37570006F5E6 /* FriendsTableViewCell.swift in Sources */,
 				657529EB257C723B000D3222 /* PartySuppliesTableViewCell.swift in Sources */,
 				652D7D32255F1DFC0086EF3C /* YourProfileViewController.swift in Sources */,

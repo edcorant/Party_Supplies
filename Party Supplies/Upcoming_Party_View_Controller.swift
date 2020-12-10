@@ -44,6 +44,7 @@ class Upcoming_Party_View_Controller: UIViewController, UITableViewDelegate, UIT
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = table_view.dequeueReusableCell(withIdentifier: "Upcoming_Party_Cell") as! Upcoming_Party_Cell
         cell.supply_name.text = supplies[indexPath.row]
+        cell.supply_circle.tag = indexPath.row
         return cell
     }
     
@@ -58,5 +59,19 @@ class Upcoming_Party_View_Controller: UIViewController, UITableViewDelegate, UIT
             }
         }
     }
-
+    
+    @IBAction func onBringing(_ sender: UIButton) {
+        let indexPath = IndexPath(row: sender.tag, section: 0)
+        let cell = self.table_view.cellForRow(at: indexPath) as! Upcoming_Party_Cell
+        
+        cell.user_is_bringing = !cell.user_is_bringing
+        
+        if cell.user_is_bringing {
+            cell.supply_circle.setImage(UIImage(systemName: "checkmark.circle"), for: .normal)
+        }
+        else {
+            cell.supply_circle.setImage(UIImage(systemName: "circle"), for: .normal)
+        }
+    }
+    
 }

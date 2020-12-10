@@ -843,7 +843,7 @@
                                                     <rect key="frame" x="374" y="11" width="20" height="22"/>
                                                     <state key="normal" image="circle" catalog="system"/>
                                                     <connections>
-                                                        <action selector="supply_check:" destination="w1u-ji-Nf0" eventType="touchUpInside" id="Es9-Dl-JRg"/>
+                                                        <action selector="onBringing:" destination="xgd-sf-XD0" eventType="touchUpInside" id="FbS-cx-4fu"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -855,7 +855,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="supply_circle" destination="z8W-5y-fdE" id="JaS-dJ-9Wz"/>
+                                            <outlet property="supply_circle" destination="z8W-5y-fdE" id="Nfh-iY-ehg"/>
                                             <outlet property="supply_name" destination="ZSU-MP-3bU" id="0rL-0m-1fR"/>
                                         </connections>
                                     </tableViewCell>

@@ -12,7 +12,7 @@ class Upcoming_Party_Cell: UITableViewCell {
     @IBOutlet weak var supply_circle: UIButton!
     @IBOutlet weak var supply_name: UILabel!
     
-    var user_is_bringing: Bool = false
+    var user_is_bringing = false
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,18 +24,5 @@ class Upcoming_Party_Cell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-    @IBAction func supply_check(_ sender: Any) {
-        
-        if user_is_bringing {
-            supply_circle.setImage(UIImage.init(named: "circle"), for: .selected)
-        }
-        
-        else {
-            supply_circle.setImage(UIImage.init(named: "checkmark.circle"), for: .selected)
-        }
-        
-        user_is_bringing = !user_is_bringing
-    }
-    
+
 }
