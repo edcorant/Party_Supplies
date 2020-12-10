@@ -135,7 +135,6 @@
 				651CFA88255F37570006F5E6 /* FriendsTableViewCell.swift */,
 				653C1D5C256044B20005F2EA /* AddFriendsTableViewCell.swift */,
 				653C1D74256055390005F2EA /* FriendRequestTableViewCell.swift */,
-				E95679B5257F31EE00AC23A2 /* Upcoming_Party_Item.swift */,
 			);
 			name = "Friends Cells";
 			sourceTree = "<group>";
@@ -147,6 +146,57 @@
 				E952BF29255B5FCF005508EE /* OLD_New_Party_ViewController.swift */,
 			);
 			name = Legacy;
+			sourceTree = "<group>";
+		};
+		657529FE2582DB3A000D3222 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				653C1D502560428A0005F2EA /* Friends Cells */,
+				653C1D6F2560532C0005F2EA /* FriendRequestsViewController.swift */,
+				653C1D6A256045D40005F2EA /* AddFriendsViewController.swift */,
+				651CFA98255F3AD40006F5E6 /* FriendsScreenViewController.swift */,
+			);
+			name = Friends;
+			sourceTree = "<group>";
+		};
+		65752A022582DBE7000D3222 /* Your Parties */ = {
+			isa = PBXGroup;
+			children = (
+				65752A032582DC2A000D3222 /* Your Parties Cells */,
+				657529EF257C7EA3000D3222 /* AddSuppliesViewController.swift */,
+				65D336FE2571AEAE00569CED /* NewPartyViewController.swift */,
+				657529DD2571BDDD000D3222 /* YourPartiesViewController.swift */,
+				E9B8CDD925721044001A217E /* PartyDetailsViewController.swift */,
+			);
+			name = "Your Parties";
+			sourceTree = "<group>";
+		};
+		65752A032582DC2A000D3222 /* Your Parties Cells */ = {
+			isa = PBXGroup;
+			children = (
+				657529EA257C723B000D3222 /* PartySuppliesTableViewCell.swift */,
+				657529E22571BE96000D3222 /* YourPartiesTableViewCell.swift */,
+			);
+			name = "Your Parties Cells";
+			sourceTree = "<group>";
+		};
+		65752A042582DC62000D3222 /* Upcoming */ = {
+			isa = PBXGroup;
+			children = (
+				65752A052582DCAB000D3222 /* Upcoming Cells */,
+				E95679AB257F2DE000AC23A2 /* Upcoming_Party_View_Controller.swift */,
+				E95679BA257F329F00AC23A2 /* Upcoming_View_Controller.swift */,
+			);
+			name = Upcoming;
+			sourceTree = "<group>";
+		};
+		65752A052582DCAB000D3222 /* Upcoming Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E95679B0257F2F9D00AC23A2 /* Upcoming_Party_Cell.swift */,
+				E95679B5257F31EE00AC23A2 /* Upcoming_Party_Item.swift */,
+			);
+			name = "Upcoming Cells";
 			sourceTree = "<group>";
 		};
 		7069CC782C01CCEA45FAE67A /* Frameworks */ = {
@@ -197,26 +247,16 @@
 		E9F52FC425520F320069243B /* Party Supplies */ = {
 			isa = PBXGroup;
 			children = (
-				653C1D502560428A0005F2EA /* Friends Cells */,
 				E9F52FCB25520F320069243B /* Main.storyboard */,
-				657529EA257C723B000D3222 /* PartySuppliesTableViewCell.swift */,
-				657529FA2582D4FC000D3222 /* Legacy */,
-				657529E22571BE96000D3222 /* YourPartiesTableViewCell.swift */,
-				657529DD2571BDDD000D3222 /* YourPartiesViewController.swift */,
-				653C1D6F2560532C0005F2EA /* FriendRequestsViewController.swift */,
-				653C1D6A256045D40005F2EA /* AddFriendsViewController.swift */,
-				651CFA98255F3AD40006F5E6 /* FriendsScreenViewController.swift */,
-				652D7D31255F1DFC0086EF3C /* YourProfileViewController.swift */,
 				E9F52FD025520F330069243B /* LaunchScreen.storyboard */,
+				652D7D31255F1DFC0086EF3C /* YourProfileViewController.swift */,
+				E9F53001255215990069243B /* Sign_In_ViewController.swift */,
+				657529FA2582D4FC000D3222 /* Legacy */,
+				657529FE2582DB3A000D3222 /* Friends */,
+				65752A022582DBE7000D3222 /* Your Parties */,
+				65752A042582DC62000D3222 /* Upcoming */,
 				E9F52FC525520F320069243B /* AppDelegate.swift */,
 				E9F52FC725520F320069243B /* SceneDelegate.swift */,
-				65D336FE2571AEAE00569CED /* NewPartyViewController.swift */,
-				E9F53001255215990069243B /* Sign_In_ViewController.swift */,
-				E9B8CDD925721044001A217E /* PartyDetailsViewController.swift */,
-				657529EF257C7EA3000D3222 /* AddSuppliesViewController.swift */,
-				E95679AB257F2DE000AC23A2 /* Upcoming_Party_View_Controller.swift */,
-				E95679B0257F2F9D00AC23A2 /* Upcoming_Party_Cell.swift */,
-				E95679BA257F329F00AC23A2 /* Upcoming_View_Controller.swift */,
 				E9F52FD325520F330069243B /* Info.plist */,
 				E9F52FCE25520F330069243B /* Assets.xcassets */,
 			);
