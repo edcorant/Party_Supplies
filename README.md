@@ -40,7 +40,7 @@ This app can start by first providing the ability to organize a party and assign
 * [x] User can add friends.
 * [x] User can create a party and add members.
 * [x] User can create a list of supplies needed for party.
-* Party attendees can choose an item from the list to bring to the party.
+* [x] Party attendees can choose an item from the list to bring to the party.
 
 **Optional Nice-to-have Stories**
 * A pay back system to let users exchange money (facilitated by CashApp).
