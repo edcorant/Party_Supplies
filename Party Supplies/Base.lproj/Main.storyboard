@@ -886,14 +886,14 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Upcoming_Party_Cell" id="w1u-ji-Nf0" customClass="Upcoming_Party_Cell" customModule="Party_Supplies" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w1u-ji-Nf0" id="su7-sj-6sg">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSU-MP-3bU">
-                                                    <rect key="frame" x="20" y="11" width="44" height="22"/>
+                                                    <rect key="frame" x="20" y="11" width="44" height="22.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -907,10 +907,11 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="ZSU-MP-3bU" firstAttribute="leading" secondItem="su7-sj-6sg" secondAttribute="leading" constant="20" symbolic="YES" id="RK4-OV-JyC"/>
+                                                <constraint firstItem="ZSU-MP-3bU" firstAttribute="top" secondItem="su7-sj-6sg" secondAttribute="top" constant="11" id="3Ts-4d-LaD"/>
                                                 <constraint firstItem="z8W-5y-fdE" firstAttribute="centerY" secondItem="su7-sj-6sg" secondAttribute="centerY" id="Rnu-hb-1fN"/>
+                                                <constraint firstItem="ZSU-MP-3bU" firstAttribute="leading" secondItem="su7-sj-6sg" secondAttribute="leading" constant="20" symbolic="YES" id="V1U-zO-uhJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="ZSU-MP-3bU" secondAttribute="bottom" constant="10.5" id="gXR-Ma-3bm"/>
                                                 <constraint firstAttribute="trailing" secondItem="z8W-5y-fdE" secondAttribute="trailing" constant="20" symbolic="YES" id="q10-Wd-opQ"/>
-                                                <constraint firstItem="ZSU-MP-3bU" firstAttribute="centerY" secondItem="su7-sj-6sg" secondAttribute="centerY" id="wnT-gt-EhZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
