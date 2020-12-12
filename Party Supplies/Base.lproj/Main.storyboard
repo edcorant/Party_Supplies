@@ -421,17 +421,76 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back, &lt;username&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56E-dh-iCf">
-                                <rect key="frame" x="62" y="120" width="290" height="26.5"/>
+                                <rect key="frame" x="64" y="115" width="290" height="26.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26.5" id="k9o-Xz-6CL"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="62cd24fba3e8fcaf2f764c8b2479fee9-1" translatesAutoresizingMaskIntoConstraints="NO" id="xFl-Tu-hfV">
+                                <rect key="frame" x="55" y="160" width="291" height="277"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status: Work Hard, Play Hard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6g-qb-ToR">
+                                <rect key="frame" x="50" y="445" width="314" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="4UH-Yx-bIR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Brought all the party supplies" translatesAutoresizingMaskIntoConstraints="NO" id="yU6-Sy-2LT">
+                                <rect key="frame" x="6" y="528" width="402" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="p8h-eu-Nps"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Created more than 5 parties this month-2" translatesAutoresizingMaskIntoConstraints="NO" id="asN-l0-aMy">
+                                <rect key="frame" x="4" y="620" width="404" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="J0A-y2-PNO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accolades: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcC-wE-oMQ">
+                                <rect key="frame" x="9" y="494" width="106" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="l1E-zF-poj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Attended 4 parties in a row" translatesAutoresizingMaskIntoConstraints="NO" id="kmE-VN-PAX">
+                                <rect key="frame" x="4" y="710" width="404" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="pBq-9c-K09"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cbj-zx-lUk"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="56E-dh-iCf" firstAttribute="centerX" secondItem="uDD-Lx-LCF" secondAttribute="centerX" id="jWE-Pj-2Ea"/>
-                            <constraint firstItem="56E-dh-iCf" firstAttribute="top" secondItem="cbj-zx-lUk" secondAttribute="top" constant="32" id="qBe-WC-0ma"/>
+                            <constraint firstItem="asN-l0-aMy" firstAttribute="top" secondItem="yU6-Sy-2LT" secondAttribute="bottom" constant="20" id="0F4-6o-axv"/>
+                            <constraint firstItem="56E-dh-iCf" firstAttribute="leading" secondItem="cbj-zx-lUk" secondAttribute="leading" constant="64" id="0lc-v4-nW0"/>
+                            <constraint firstItem="xFl-Tu-hfV" firstAttribute="leading" secondItem="cbj-zx-lUk" secondAttribute="leading" constant="55" id="12k-pR-ijc"/>
+                            <constraint firstItem="B6g-qb-ToR" firstAttribute="top" secondItem="xFl-Tu-hfV" secondAttribute="bottom" constant="8" id="33m-af-CHg"/>
+                            <constraint firstItem="kmE-VN-PAX" firstAttribute="top" secondItem="asN-l0-aMy" secondAttribute="bottom" constant="23" id="4jx-tj-gYX"/>
+                            <constraint firstItem="dcC-wE-oMQ" firstAttribute="top" secondItem="B6g-qb-ToR" secondAttribute="bottom" constant="8" id="7cw-bw-BF6"/>
+                            <constraint firstItem="asN-l0-aMy" firstAttribute="leading" secondItem="cbj-zx-lUk" secondAttribute="leading" constant="4" id="9fz-pe-bJs"/>
+                            <constraint firstItem="B6g-qb-ToR" firstAttribute="leading" secondItem="cbj-zx-lUk" secondAttribute="leading" constant="50" id="F4d-Bi-3Eo"/>
+                            <constraint firstItem="dcC-wE-oMQ" firstAttribute="leading" secondItem="cbj-zx-lUk" secondAttribute="leading" constant="9" id="MxZ-qJ-Y5t"/>
+                            <constraint firstItem="asN-l0-aMy" firstAttribute="trailing" secondItem="kmE-VN-PAX" secondAttribute="trailing" id="SJ7-p5-an8"/>
+                            <constraint firstItem="cbj-zx-lUk" firstAttribute="bottom" secondItem="kmE-VN-PAX" secondAttribute="bottom" constant="38" id="WT2-kU-ycB"/>
+                            <constraint firstItem="B6g-qb-ToR" firstAttribute="centerX" secondItem="uDD-Lx-LCF" secondAttribute="centerX" id="arL-fb-VZu"/>
+                            <constraint firstItem="yU6-Sy-2LT" firstAttribute="trailing" secondItem="asN-l0-aMy" secondAttribute="trailing" id="hVB-ng-eHU"/>
+                            <constraint firstItem="asN-l0-aMy" firstAttribute="leading" secondItem="kmE-VN-PAX" secondAttribute="leading" id="hVS-Mb-uER"/>
+                            <constraint firstItem="yU6-Sy-2LT" firstAttribute="top" secondItem="dcC-wE-oMQ" secondAttribute="bottom" constant="8" id="hha-yd-ALp"/>
+                            <constraint firstItem="56E-dh-iCf" firstAttribute="top" secondItem="cbj-zx-lUk" secondAttribute="top" constant="27" id="p2n-kg-KRN"/>
+                            <constraint firstItem="yU6-Sy-2LT" firstAttribute="leading" secondItem="cbj-zx-lUk" secondAttribute="leading" constant="6" id="qqq-EO-2eS"/>
+                            <constraint firstItem="B6g-qb-ToR" firstAttribute="centerX" secondItem="yU6-Sy-2LT" secondAttribute="centerX" id="waH-q0-RDJ"/>
+                            <constraint firstItem="xFl-Tu-hfV" firstAttribute="top" secondItem="56E-dh-iCf" secondAttribute="bottom" constant="18.5" id="wjR-6m-qpM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Account" id="2mO-ci-awg">
@@ -950,6 +1009,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="62cd24fba3e8fcaf2f764c8b2479fee9-1" width="291" height="292"/>
+        <image name="Attended 4 parties in a row" width="423" height="67"/>
+        <image name="Brought all the party supplies" width="423" height="67"/>
+        <image name="Created more than 5 parties this month-2" width="423" height="67"/>
         <image name="arrowshape.turn.up.right" catalog="system" width="128" height="106"/>
         <image name="circle" catalog="system" width="128" height="121"/>
         <image name="face.smiling" catalog="system" width="128" height="121"/>
